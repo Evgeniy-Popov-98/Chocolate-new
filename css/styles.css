@@ -94,6 +94,7 @@ button {
 }
 
 .menu-button {
+  cursor: pointer;
 }
 
 .socials {
@@ -196,81 +197,65 @@ button {
 
 /**================================MODAL=====================*/
 
-/* @media screen and (min-width: 768px) {
-	.container-head {
-		display: flex;
-		justify-content: space-between;
-		padding-top: 30px;
-		padding-bottom: 30px;
-	  }
-	  
-	  .navigation {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-grow: 1;
-	  }
-	  
-	  .navigation-logo-link {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: #111;
-		font-size: 18px;
-		font-weight: 700;
-		line-height: 1.11;
-		letter-spacing: -0.54px;
-	  }
-	  
-	  .navigation-link span {
-		margin-right: 4px;
-		color: #111;
-		font-size: 18px;
-		font-style: italic;
-		font-weight: 700;
-		line-height: 1.11;
-		letter-spacing: -0.03em;
-	  }
-	  
-	  .navigation-logo img {
-		padding-left: 4px;
-	  }
-	  
-	  .navigation-list {
-		display: flex;
-		gap: 40px;
-	  }
-	  
-	  .navigation-item a {
-		color: #111;
-		font-size: 14px;
-		font-weight: 500;
-		line-height: 1.14;
-		letter-spacing: -0.02em;
-	  }
-	  
-	  .navigation-link {
-		padding: 10px 0;
-	  }
-	  
-	  .socials {
-		margin-left: 90px;
-	  }
-	  
-	  .socials-list {
-		display: flex;
-		gap: 14px;
-	  }
-	  
-	  .navigation-socials-link {
-		padding: 7px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	  }
-	  
-	  .socials-item {
-		border: 1px solid rgba(17, 17, 17, 0.1);
-		border-radius: 10px;
-	  }
-} */
+@media screen and (min-width: 768px) {
+  .container-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 32px;
+  }
+
+  .navigation {
+    /* flex-grow: 1; */
+  }
+
+  .navigation-logo-link {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+  }
+
+  .navigation-link span {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    font-style: italic;
+  }
+
+  .navigation-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .navigation-item a {
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+  }
+
+  .navigation-link {
+    padding: 10px 0;
+  }
+
+  .socials {
+    margin-left: 90px;
+  }
+
+  .socials-list {
+    display: flex;
+    gap: 14px;
+  }
+
+  .navigation-socials-link {
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .socials-item {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 10px;
+  }
+}
