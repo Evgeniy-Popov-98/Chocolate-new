@@ -36,7 +36,7 @@ button {
 }
 
 .container {
-  max-width: 335px;
+  width: 335px;
   margin: 0 auto;
 }
 
@@ -53,6 +53,7 @@ button {
 }
 
 .navigation-logo-link {
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +65,7 @@ button {
 }
 
 .navigation-logo-link span {
-  margin-right: 6px;
+  margin-right: 4px;
   color: #111;
   font-size: 18px;
   font-style: italic;
@@ -73,24 +74,22 @@ button {
   letter-spacing: -0.03em;
 }
 
-.navigation-logo img {
-  padding-left: 4px;
+.navigation-logo-link img {
+  margin-left: 4px;
+  width: 21px;
 }
 
 .navigation-list {
   display: none;
 }
 
-.navigation-item a {
+.navigation-link {
+  padding: 10px 0;
   color: #111;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
-}
-
-.navigation-link {
-  padding: 10px 0;
 }
 
 .menu-button {
@@ -138,16 +137,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.close-icon {
-}
-.icon {
-}
-
-.menu-list {
-}
-
-.menu-item {
 }
 
 .menu-item:not(:last-child) {
@@ -198,14 +187,18 @@ button {
 /**================================MODAL=====================*/
 
 @media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+  }
+
   .container-head {
     display: flex;
     justify-content: space-between;
-    padding: 20px 32px;
+    padding: 20px 0;
   }
 
-  .navigation {
-    /* flex-grow: 1; */
+  .navigation-logo {
+    margin-right: 47px;
   }
 
   .navigation-logo-link {
@@ -214,7 +207,7 @@ button {
     letter-spacing: -0.03em;
   }
 
-  .navigation-link span {
+  .navigation-logo-link span {
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.03em;
@@ -223,23 +216,12 @@ button {
 
   .navigation-list {
     display: flex;
-    gap: 40px;
-  }
-
-  .navigation-item a {
-    color: #111;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: -0.02em;
-  }
-
-  .navigation-link {
-    padding: 10px 0;
+    gap: 20px;
   }
 
   .socials {
-    margin-left: 90px;
+    display: flex;
+    margin-left: 28px;
   }
 
   .socials-list {
@@ -257,5 +239,78 @@ button {
   .socials-item {
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 10px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+
+  .container-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .navigation-logo {
+    margin-right: 47px;
+  }
+
+  .navigation-logo-link {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+  }
+
+  .navigation-logo-link span {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    font-style: italic;
+  }
+
+  .navigation-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navigation-link {
+    padding: 10px 0;
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+  }
+
+  .socials {
+    display: flex;
+    margin-left: 28px;
+  }
+
+  .socials-list {
+    display: flex;
+    gap: 14px;
+  }
+
+  .navigation-socials-link {
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .socials-item {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 10px;
+  }
+
+  .menu-button {
+    display: none;
   }
 }
