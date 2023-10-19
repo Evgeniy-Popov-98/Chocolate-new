@@ -21,15 +21,11 @@ img {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #fafafa;
-}
-
-.container {
-  max-width: 1166px;
-  padding: 0 15px;
-  margin: 0 auto;
+  color: #fff;
 }
 
 button {
+  margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -144,7 +140,6 @@ button {
 }
 
 .menu-link {
-  color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -184,17 +179,76 @@ button {
   fill: #fff;
 }
 
+/* =========================== HERO =========================*/
+
+.hero {
+  padding-bottom: 80px;
+}
+
+.container-hero {
+  background-image: linear-gradient(
+      to top,
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(/images/hero/hego-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: auto;
+}
+
+.title-hero {
+  margin: 395px 0 32px 0;
+  max-width: 290px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.buy-btn {
+  padding: 12px 28px;
+  border-radius: 100px;
+  background: #fd9222;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.how-btn {
+  margin-left: 10px;
+  padding: 12px 27px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.text-hero {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: -0.03em;
+}
+
+.scroll-btn {
+}
+
 /**================================MODAL=====================*/
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 704px;
+    width: 768px;
   }
 
   .container-head {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 32px;
   }
 
   .navigation-logo {
@@ -248,13 +302,17 @@ button {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    width: 1136px;
+    padding: 20px 16px;
   }
 
   .container-head {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+  }
+
+  .navigation {
+    flex-grow: 1;
   }
 
   .navigation-logo {
@@ -290,7 +348,7 @@ button {
 
   .socials {
     display: flex;
-    margin-left: 28px;
+    margin-left: 90px;
   }
 
   .socials-list {
