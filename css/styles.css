@@ -33,8 +33,13 @@ button {
 }
 
 .container {
-  width: 335px;
+  width: 375px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+.icon {
+  fill: #111;
 }
 
 /* ======================== HEDER ========================*/
@@ -296,11 +301,11 @@ button {
 
   .socials {
     display: flex;
-    margin-left: 28px;
   }
 
   .socials-list {
     display: flex;
+    align-items: center;
     gap: 14px;
   }
 
