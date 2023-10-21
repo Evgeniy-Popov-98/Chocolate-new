@@ -25,6 +25,7 @@ body {
 }
 
 button {
+  display: block;
   margin: 0;
   padding: 0;
   border: none;
@@ -75,6 +76,10 @@ button {
   width: 21px;
 }
 
+.icon-logo {
+  fill: #fd9222;
+}
+
 .navigation-list {
   display: none;
 }
@@ -90,6 +95,11 @@ button {
 
 .menu-button {
   cursor: pointer;
+}
+
+.icon-menu {
+  stroke: #111111;
+  fill: #111111;
 }
 
 .socials {
@@ -228,14 +238,25 @@ button {
   font-weight: 600;
 }
 
+.box-bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  gap: 12px;
+}
+
 .text-hero {
   font-size: 12px;
   font-weight: 500;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: -0.03em;
 }
 
 .scroll-btn {
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 /**================================MODAL=====================*/
