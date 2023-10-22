@@ -1,96 +1,131 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
 
-img {
-  display: block;
-}
-
-/*=======================================*/
-
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #fafafa;
-  color: #fff;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 button {
-  display: block;
-  margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  font-size: 0;
 }
 
+/*!===========================================================*/
+
 .container {
-  width: 375px;
+  max-width: 375px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-.icon {
-  fill: #111;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
 }
 
-/* ======================== HEDER ========================*/
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .container-head {
-  padding: 20px 20px 14px 20px;
-}
-
-.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-head {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    /* gap: 47px; */
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .navigation-list {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.navigation-logo {
 }
 
 .navigation-logo-link {
-  padding: 10px 0;
   display: flex;
-  justify-content: center;
   align-items: center;
   color: #111;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: -0.54px;
-}
-
-.navigation-logo-link span {
-  margin-right: 4px;
-  color: #111;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 700;
-  line-height: 1.11;
+  line-height: 1.29;
   letter-spacing: -0.03em;
 }
 
-.navigation-logo-link img {
-  margin-left: 4px;
-  width: 21px;
+@media screen and (min-width: 1158px) {
+  .navigation-logo-link {
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+  }
+}
+
+.navigation-logo-link span {
+  font-style: italic;
+  margin-right: 4px;
 }
 
 .icon-logo {
-  fill: #fd9222;
+  width: 21px;
+  height: 21px;
+  margin-left: 4px;
+}
+
+@media screen and (min-width: 1158px) {
+  .icon-logo {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.icon {
 }
 
 .navigation-list {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation-list {
+    display: flex;
+    gap: 20px;
+  }
+}
+.navigation-item {
+}
 .navigation-link {
-  padding: 10px 0;
   color: #111;
   font-size: 14px;
   font-weight: 500;
@@ -98,303 +133,64 @@ button {
   letter-spacing: -0.02em;
 }
 
-.menu-button {
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
-
 .icon-menu {
-  stroke: #111111;
-  fill: #111111;
+  stroke: #111;
 }
 
 .socials {
   display: none;
 }
 
-.header-menu {
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 1;
-  padding: 20px;
-  background-color: #1e1823;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: auto;
-}
-
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
-
-.menu-navigation {
-  margin-bottom: 20px;
-}
-
-.close-menu-btn {
-  margin-left: auto;
-  width: 28px;
-  height: 28px;
-  margin-bottom: 88px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu-item:not(:last-child) {
-  margin-bottom: 24px;
-}
-
-.menu-link {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -0.02em;
-  transition: color 250ms linear;
-}
-
-.menu-home-link {
-  color: #fd9222;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: #fd9222;
-}
-
-.socials-menu {
-  display: flex;
-  align-items: center;
-}
-.socials-menu-list {
-  display: flex;
-  gap: 14px;
-}
-.socials-menu-item {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-}
-.socials-menu-link {
-  padding: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.close-icon {
-  fill: #fff;
-}
-
-/* =========================== HERO =========================*/
-
-.hero {
-  padding-bottom: 80px;
-}
-
-.container-hero {
-  background-image: linear-gradient(
-      to top,
-      rgba(17, 17, 17, 0.4),
-      rgba(17, 17, 17, 0.4)
-    ),
-    url(/images/hero/hego-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 30px;
-  padding: 20px;
-  margin-bottom: auto;
-}
-
-.title-hero {
-  margin: 395px 0 32px 0;
-  max-width: 290px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-}
-
-.buy-btn {
-  padding: 12px 28px;
-  border-radius: 100px;
-  background: #fd9222;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.how-btn {
-  margin-left: 10px;
-  padding: 12px 27px;
-  border-radius: 100px;
-  border: 1px solid #fff;
-  cursor: pointer;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.box-bottom {
-  display: flex;
-  align-items: center;
-  margin-top: 32px;
-  gap: 12px;
-}
-
-.text-hero {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: -0.03em;
-}
-
-.scroll-btn {
-  width: 28px;
-  height: 28px;
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-/**================================MODAL=====================*/
-
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-
-  .container-head {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 32px;
-  }
-
-  .navigation-logo {
-    margin-right: 47px;
-  }
-
-  .navigation-logo-link {
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.03em;
-  }
-
-  .navigation-logo-link span {
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.03em;
-    font-style: italic;
-  }
-
-  .navigation-list {
-    display: flex;
-    gap: 20px;
-  }
-
   .socials {
-    display: flex;
-  }
-
-  .socials-list {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-  }
-
-  .navigation-socials-link {
-    padding: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .socials-item {
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 10px;
-  }
-
-  .menu-button {
-    display: none;
+    display: inline;
+    margin-left: 28px;
   }
 }
 
 @media screen and (min-width: 1158px) {
-  .container {
-    width: 1136px;
-    padding: 20px 16px;
-  }
-
-  .container-head {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .navigation {
-    flex-grow: 1;
-  }
-
-  .navigation-logo {
-    margin-right: 47px;
-  }
-
-  .navigation-logo-link {
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.03em;
-  }
-
-  .navigation-logo-link span {
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.03em;
-    font-style: italic;
-  }
-
-  .navigation-list {
-    display: flex;
-    gap: 20px;
-  }
-
-  .navigation-link {
-    padding: 10px 0;
-    color: #111;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: -0.02em;
-  }
-
   .socials {
-    display: flex;
     margin-left: 90px;
   }
+}
 
+@media screen and (min-width: 768px) {
   .socials-list {
     display: flex;
     gap: 14px;
   }
+}
 
-  .navigation-socials-link {
-    padding: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.socials-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  cursor: pointer;
+}
 
-  .socials-item {
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 10px;
-  }
-
-  .menu-button {
-    display: none;
-  }
+.navigation-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #111;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.icon-facebook {
+}
+.icon {
+}
+.icon-instagram {
+}
+.icon-twitter {
 }
