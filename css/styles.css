@@ -22,6 +22,22 @@ button {
   font-size: 0;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /*!===========================================================*/
 
 .container {
@@ -60,13 +76,22 @@ button {
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
-    /* gap: 47px; */
+    gap: 47px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .navigation {
+    display: flex;
+    gap: 0px;
+    flex-grow: 1;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .navigation-list {
     display: flex;
+    align-items: center;
     margin-left: auto;
   }
 }
@@ -193,4 +218,60 @@ button {
 .icon-instagram {
 }
 .icon-twitter {
+}
+
+/*======================== HERO ======================*/
+
+.hero {
+  padding-top: 14px;
+}
+
+.container {
+}
+
+.container-hero {
+  max-width: 335px;
+  padding: 395px 20px 20px 20px;
+  background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+    url(/images/hero/hego-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.title-hero {
+  max-width: 290px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.buy-btn {
+  margin: 32px 14px 0 0;
+  padding: 12px 28px;
+  background-color: #fd9222;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.how-btn {
+  padding: 12px 28px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+.box-bottom {
+}
+.text-hero {
+}
+.scroll-btn {
 }
