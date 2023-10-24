@@ -3,7 +3,7 @@ a {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul,
@@ -246,7 +246,7 @@ img {
   max-width: 335px;
   padding: 395px 20px 20px 20px;
   background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-    url(/images/hero/hego-bg.jpg);
+    url(../images/hero/hego-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -270,7 +270,7 @@ img {
     max-width: 704px;
     padding: 671px 40px 40px 40px;
     background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-      url(/images/hero/hego-bg-tab.jpg);
+      url(../images/hero/hego-bg-tab.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,7 +294,7 @@ img {
     max-width: 1136px;
     padding: 381px 40px 40px 40px;
     background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-      url(/images/hero/hego-bg-desk.jpg);
+      url(../images/hero/hego-bg-desk.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
