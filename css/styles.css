@@ -240,6 +240,18 @@ img {
   border-radius: 30px;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .container-hero {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/hero/hego-bg-2x.jpg);
+  }
+}
+
 .title-hero {
   max-width: 290px;
   color: #fff;
@@ -249,8 +261,13 @@ img {
   letter-spacing: -0.03em;
 }
 
+.box-bottom {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .buy-btn {
-  margin: 32px 14px 0 0;
   padding: 12px 28px;
   background-color: #fd9222;
   border-radius: 100px;
@@ -269,9 +286,31 @@ img {
   font-weight: 600;
   line-height: normal;
 }
-.box-bottom {
+
+.box-scroll {
+  margin-top: 32px;
+  width: 107px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .text-hero {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
 }
+
 .scroll-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.icon-scroll {
+  fill: #fd9222;
 }
